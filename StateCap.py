@@ -70,8 +70,7 @@ STATES_CAPITALS = {
 
 
 def capital_of_Idaho():
-    # Your code here
-    pass
+   return "I"
 
 def all_states():
     # Your code here
