@@ -72,27 +72,22 @@ STATES_CAPITALS = {
 def capital_of_Idaho():
     print(STATES_CAPITALS["Idaho"])
 
-
 def all_states():
     print(STATES_CAPITALS.keys())
-
 
 def all_capitals():
     print(STATES_CAPITALS.values())
 
-
 def states_capitals_string():
     all_capitals = ""
     for key, value in sorted(STATES_CAPITALS.items()):
-        all_capitals += key + "->" + value + ", "
+        all_capitals += key + " -> " + value + ", "
     return all_capitals
-
 
 def get_state(capital):
     for key, value in STATES_CAPITALS.items():
         if capital == value:
             return key
-
 
 def test_state_to_capital():
     assert 'Cheyenne' == STATES_CAPITALS['Wyoming']
