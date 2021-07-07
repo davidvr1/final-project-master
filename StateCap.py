@@ -85,10 +85,10 @@ def states_capitals_string():
     return all_capitals
 
 def get_state(capital):
-    for key, value in STATES_CAPITALS.items():
-        if capital == value:
-            return key
-    return
+    if capital:
+        for key, value in STATES_CAPITALS.items():
+            if capital == value:
+                return key
 
 def test_state_to_capital():
     assert 'Cheyenne' == STATES_CAPITALS['Wyoming']
