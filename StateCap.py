@@ -88,6 +88,7 @@ def get_state(capital):
     for key, value in STATES_CAPITALS.items():
         if capital == value:
             return key
+    return
 
 def test_state_to_capital():
     assert 'Cheyenne' == STATES_CAPITALS['Wyoming']
@@ -108,7 +109,7 @@ def test_capital_to_state_unknown():
 
 
 def main():
-    return pytest.main(__file__)
+    return pytest.main()
 
 
 if __name__ == '__main__':

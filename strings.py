@@ -14,6 +14,7 @@ import pytest
 def no_duplicates(a_string):
     return "".join(sorted((dict.fromkeys(a_string))))
 
+
 def reversed_words(a_string):
     lst = a_string.split()
     return lst[::-1]
@@ -41,9 +42,8 @@ def test_four_char_strings():
 
 
 def main():
-    return pytest.main()
+    return pytest.main(__file__)
 
 
 if __name__ == '__main__':
     main()
-    
