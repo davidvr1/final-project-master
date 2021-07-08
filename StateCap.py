@@ -72,6 +72,7 @@ STATES_CAPITALS = {
 def capital_of_Idaho():
     print(STATES_CAPITALS["Idaho"])
 
+
 def all_states():
     print(STATES_CAPITALS.keys())
 
